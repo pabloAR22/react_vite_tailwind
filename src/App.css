@@ -566,14 +566,6 @@ video {
   position: relative;
 }
 
-.top-0 {
-  top: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -582,32 +574,40 @@ video {
   left: 0px;
 }
 
-.z-10 {
-  z-index: 10;
+.right-0 {
+  right: 0px;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.top-0 {
+  top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .m-1 {
   margin: 0.25rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
 
-.h-60 {
-  height: 15rem;
+.grid {
+  display: grid;
 }
 
 .h-4\/5 {
@@ -618,24 +618,12 @@ video {
   height: 1.5rem;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
-.h-5 {
-  height: 1.25rem;
+.h-60 {
+  height: 15rem;
 }
 
 .h-full {
   height: 100%;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-56 {
@@ -646,8 +634,20 @@ video {
   width: 1.5rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.max-w-screen-lg {
+  max-width: 1024px;
+}
+
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -666,12 +666,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .rounded-full {
@@ -696,14 +696,6 @@ video {
      object-fit: cover;
 }
 
-.p-7 {
-  padding: 1.75rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -718,14 +710,14 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xs {
@@ -737,21 +729,21 @@ video {
   font-weight: 300;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-medium {
   font-weight: 500;
 }
 
-.text-black\/60 {
-  color: rgb(0 0 0 / 0.6);
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.text-black\/60 {
+  color: rgb(0 0 0 / 0.6);
 }
 
 .underline {
@@ -760,4 +752,10 @@ video {
 
 .underline-offset-4 {
   text-underline-offset: 4px;
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
